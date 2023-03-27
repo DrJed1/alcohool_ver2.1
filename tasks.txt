@@ -1,0 +1,7 @@
+modal on 'contact with us' click
+responsive design
+connect telegram-bot to 'contact with us'
+
+post web-site on git-hub
+buy domain
+make visit-cards
