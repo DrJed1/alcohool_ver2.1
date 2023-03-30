@@ -1,7 +1,6 @@
-modal on 'contact with us' click
 responsive design
+modal on 'contact with us' click
 connect telegram-bot to 'contact with us'
 
-post web-site on git-hub
 buy domain
 make visit-cards
