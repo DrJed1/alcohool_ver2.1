@@ -269,7 +269,7 @@ header{
     }
     @media (max-width: 750px) and (orientation:portrait){
         .price-head{
-            height: 2vh;
+            height: 4vh;
         }
         .sector-price{
             height: 210vh;
@@ -279,7 +279,7 @@ header{
         .pack-container{
             flex-direction: column;
             align-items: center;
-            height: 202vh;
+            height: 204vh;
             row-gap: 5vh
         }
         .pack-list li{
