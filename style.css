@@ -330,7 +330,7 @@ header{
     }
     @media (max-width:750px) {
         .sector-process{
-            height: 70vh;
+            height: 80vh;
             display: flex;
             flex-direction: column;
             row-gap: 1em;
