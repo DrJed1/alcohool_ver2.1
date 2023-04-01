@@ -283,6 +283,9 @@ header{
             width: 80%;
             height: 100%;
         }
+        .pack-type{
+            font-size:1rem;
+        }
         .pack-list li{
             font-size: .7rem;
         }
