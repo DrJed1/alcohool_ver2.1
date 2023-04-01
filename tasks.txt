@@ -1,6 +1,4 @@
-responsive design
 modal on 'contact with us' click
 connect telegram-bot to 'contact with us'
 
-buy domain
 make visit-cards
