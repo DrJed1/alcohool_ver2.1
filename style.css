@@ -44,9 +44,10 @@ header{
         color: whitesmoke;
     }
     .logo{
+        font-weight: 100;
         color: #375283;
         margin-right: 1em;
-        text-shadow: 1px 1px 1px #000;
+        text-shadow: 0px 0px 1px #000;
     }
 
     #check{
