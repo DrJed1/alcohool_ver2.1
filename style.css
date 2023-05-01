@@ -612,3 +612,6 @@ header{
     justify-content: flex-end;
     flex-direction: column;
 }
+.error{
+    height: 100vh;
+}
