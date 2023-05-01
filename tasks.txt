@@ -1,4 +1,0 @@
-modal on 'contact with us' click
-connect telegram-bot to 'contact with us'
-
-make visit-cards
