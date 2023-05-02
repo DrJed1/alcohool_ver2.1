@@ -8,6 +8,7 @@ https://mobimedx.com/nurse
 https://mobimedx.com/poisoning
 https://mobimedx.com/process
 https://mobimedx.com/ua
+https://mobimedx.com/ua/alc
 https://mobimedx.com/ua/about
 https://mobimedx.com/ua/beauty
 https://mobimedx.com/ua/immunity
