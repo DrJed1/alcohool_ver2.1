@@ -269,6 +269,7 @@ header{
         height: 80%;
         display: flex;
         justify-content: flex-start;
+        align-items: center;
     }
     .nurse-pic-container{
         height: 90%;
@@ -286,14 +287,15 @@ header{
             scale:101%;
         }
     .nurse-text{
-        display: flex;
-        justify-self: center;
-        align-self: center;
+        display: block;
         padding: 2em;
         width: 64%;
         letter-spacing: 0.1em;
         line-height: 2em;
         max-width: 50em;
+    }
+    .nurse-text span{
+        font-weight: 800;
     }
 /* Регуляція всіх сторінок-додатків
 Продовження для сторінки медсестри на дому*/
