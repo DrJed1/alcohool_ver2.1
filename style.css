@@ -380,7 +380,7 @@ header{
     }
     @media (max-width: 750px){
         .sector-nurse{
-            height: 110vh;
+            height: 120vh;
         }
         .nurse-price-head{
             height: 4%;
