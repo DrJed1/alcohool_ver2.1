@@ -131,15 +131,16 @@ header{
         margin-left:50%;
         margin-top: 1em;
         margin-bottom: 0.5em;
-        font-size: 3rem;
+        font-size: 3.5rem;
         color: #375283;
     }
-    .main-text h4{
+    .main-text p{
         margin-left: 50%;
         margin-bottom: 1.5em;
-        font-size: 1rem;
-        color: #172339;
+        font-size: 1.1rem;
+        color: #5b5b7f;
         letter-spacing: 0.1em;
+        font-weight: 600;
     }
     .main-text li{
         margin-left: 52%;
@@ -148,7 +149,7 @@ header{
     }
     .contact{
         font-size: 1.3rem;
-        margin-left: 52%;
+        margin-left: 50%;
         margin-top: 1em;
         padding: 0.7em 1em;
         border: none;
@@ -176,7 +177,7 @@ header{
             margin-top: -1em;
             font-size: 1.5rem;
         }
-        .main-text h4{
+        .main-text p{
             font-size: 1rem;
         }
         .main-text li{
@@ -569,7 +570,7 @@ header{
         scale: 102%;
     }
     .sector-process p{
-        text-align: center;
+        padding-left:0.4em;
         letter-spacing: 0.1em;
     }
     .stage-num-1, .stage-num-3{
