@@ -14,13 +14,13 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FENCYHVNYM"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-FENCYHVNYM"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-FENCYHVNYM');
-    </script>
+    </script> -->
   </head>
   <body>
     <!-- Русская версия сайта -->
@@ -53,10 +53,10 @@
       <div class="main-text">
           <h1>Мобильная внутривенная помощь в Одессе</h1>
           <p>Профессиональные услуги медицинской сестры у вас дома. Доверьте постановку капельницы и уколы нашим квалифицированным сотрудникам в комфортной обстановке.</p>
-          <form action="bot.php" method="POST">
-          <div class="phone">      				
-          <input type="text" class="form-control" id="" name="user_phone" placeholder="+380 (99) 99 99 999"></div>
-          <a href=""><button class="contact">Связаться с нами</button></a>
+          <form id="tg">
+          <div class="form-control">    				
+          <input type="text" class="form-control" name="user_phone" id="user_phone"></div>
+          <button class="btn btn-primary" type="submit">Связаться с нами</button></a>
           </form>
         </div>
       </div>
@@ -175,3 +175,22 @@
     </footer>
   </body>
 </html>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+  const TOKEN = "6096789197:AAEMPpR7TBGnINzGBEKHhZExt-07q4Y19as";
+  const CHAT_ID = "-998072078";
+  const URI_API = "https://api.telegram.org/bot6096789197:AAEMPpR7TBGnINzGBEKHhZExt-07q4Y19as/sendMessage";
+  
+  document.getElementById('tg').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    let massage = '<b>Кинули заявку:</b>';
+    massage += document.getElementById('user_phone').value;
+
+    axios.post(URI_API, {
+    chat_id: CHAT_ID,
+    parse_mode: 'html',
+    text:massage
+    })
+  })
+</script>
