@@ -271,7 +271,7 @@ header{
     }
     @media (max-width: 750px){
         .main-list{
-            height: 120vh;
+            height: 130vh;
         }
         .list-container{
             max-width: 90%;

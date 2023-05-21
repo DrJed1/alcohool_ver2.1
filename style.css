@@ -301,6 +301,9 @@ header{
         .nurse-pic-cont{
             width: 95%;
         }
+        .nurse-pic-cont img{
+            margin-left:-1em;
+        }
         .nurse-text-main h2{
             text-align: center;
         }
@@ -526,8 +529,6 @@ justify-content: center;
         height: 100%;
         width: 100%;
         object-fit:cover;
-        box-shadow:0.5em 0.5em 1em#5b84d0;
-        transition: 0.15s;
     }
     .inj-img:hover{
         height: 101%;
@@ -538,7 +539,7 @@ justify-content: center;
             column-gap: 1em;
         }
         .text-about{
-            padding: 0;
+            padding: 1em;
             font-size: .9rem;
             order: 1;
             width: 97%;
@@ -550,7 +551,6 @@ justify-content: center;
         }
         .inj-img{
             scale: 97%;
-            border-radius: 1px 1px 1px 1px;
             
         }
     }
