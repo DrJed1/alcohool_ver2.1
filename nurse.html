@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Медсестра на дом Одесса</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="subpages.css" />
     <link href="https://css.gg/check.css" rel="stylesheet" />
     <link
       href="https://unpkg.com/css.gg@2.0.0/icons/css/menu-grid-r.css"
@@ -31,13 +31,32 @@
     />
     <link rel="manifest" href="/site.webmanifest" />
   </head>
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-FENCYHVNYM"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-FENCYHVNYM");
+  </script>
   <body>
     <!-- Хедер -->
     <header>
+      <a class="logo" href="/"><img src="/img/mobimedx.png" /></a>
       <input type="checkbox" id="check" name="check" />
+      <div class="lang-switch">
+        <a href="/nurse" style="text-decoration: underline">RU</a>|<a
+          href="/ua/nurse"
+          >UA</a
+        >
+      </div>
       <label for="check"><i class="gg-menu-grid-r"></i></label>
       <ul class="nav">
-        <li><a href="/about">О НАС</a></li>
+        <li><a href="/">ГЛАВНАЯ</a></li>
         <li class="sub-button">
           <a class="sub-button1">УСЛУГИ</a>
           <ul class="sub-menu">
@@ -49,41 +68,67 @@
             <li><a href="/beauty">Капепельница Золушка</a></li>
           </ul>
         </li>
-        <li><a href="/process">КАК МЫ РАБОТАЕМ</a></li>
+        <li><a href="/about">О НАС</a></li>
         <li><a href="#massage">КОНТАКТЫ</a></li>
         <li class="nav-number">
           <a href="tel:+380507358689">+38 (050) 735 86 89</a>
         </li>
       </ul>
-      <div class="lang-switch">
-        <a href="/nurse" style="text-decoration: underline">RU</a>|<a
-          href="/ua/nurse"
-          >UA</a
-        >
-      </div>
-      <a class="logo" href="/"><img src="/img/mobimedx.png"></a>
     </header>
-    <!-- Услуги медсестры на дом -->
-    <div class="home-nurse">
-      <div class="sector-nurse">
-        <div class="nurse-price-head"><h1>Медсестра на дом в Одессе</h1></div>
-        <div class="nurse-info-container">
-          <div class="nurse-pic-container">
-            <img src="/img/nurse_iv.jpeg" class="nurse-pic" />
+    <!-- Хиро -->
+    <div class="hero">
+      <div class="htext-side">
+        <h1>Медсестра на дом в Одессе</h1>
+        <p>
+          В случае, если вам необходимо поставить капельницу или сделать уколы
+          на дому, мы предлагаем свои профессиональные услуги. Наши сотрудники
+          имеют значительный опыт работы в стацонаре, что значит инъекции даже в
+          самые тяжелые вены.
+        </p>
+        <form id="tg">
+          <div class="form-control">
+            <input
+              type="tel"
+              class="form-control"
+              name="user_phone"
+              id="user_phone"
+              placeholder="XXXXXXXX"
+              value="+380"
+              minlength="13"
+              maxlength="13"
+            /><button class="contact" type="submit">
+              Бесплатная консультация
+            </button>
           </div>
-          <div class="nurse-text">
-            В случае, если вам необходимо поставить капельницу или сделать уколы
-            на дому, мы предлагаем свои профессиональные услуги. Наши сотрудники
-            имеют значительный опыт работы в стацонаре, что значит инъекции даже
-            в самые тяжелые вены. В случае экстренных ситуаций (алергия,
-            непереносимость лекарства), у нас есть аптечка неотложной помощи.
-            Все расходники (спирт, вата, лейкопластырь, шприцы, система) мы
-            берем на себя - вам нужно преобрести только лекарства. <b>Цена от 200
-            грн</b> и зависит от вашего месторасположения и объема лечения.
-          </div>
+          <div id="success">Сообщение отправлено</div>
+        </form>
+        <h5>Работаем с 2019 года</h5>
+      </div>
+      <div class="hpic-side">
+        <img src="/img/nurse_iv.jpeg" />
+      </div>
+    </div>
+    <!-- Почему выбрать нас -->
+    <div class="sector-why-us">
+      <h2>Наши приемущества:</h2>
+      <div class="why-us-container">
+        <div class="why-us-box">
+          <img src="/img/icons/anonymity.png" />
+          <p>Анонимность ваших данных</p>
+        </div>
+        <div class="why-us-box">
+          <img src="/img/icons/chronometer.png" />
+          <p>Выезд в день звонка, либо удобное для вас время</p>
+        </div>
+        <div class="why-us-box">
+          <img src="/img/icons/first-aid-kit.png" />
+          <p>Едем с аптечкой неотложной помощи</p>
         </div>
       </div>
-      <div class="nurse-discription">
+    </div>
+    <!-- Основной текст -->
+    <div class="main-list">
+      <div class="list-container">
         <h2>Какие виды услуг оказывает медсестра на дому:</h2>
         <ul>
           <li><i class="gg-check"></i>Капельница на дому</li>
@@ -94,17 +139,20 @@
           <li><i class="gg-check"></i>Возможен ранний выезд до 7 утра</li>
         </ul>
       </div>
-      <div class="nurse-price-head"><p>Как мы работаем:</p></div>
-      <div class="nurse-work-container">
-        <div class="nurse-work-box">
+    </div>
+    <!-- Как мы работаем -->
+    <div class="sector-work">
+      <p>Как мы работаем:</p>
+      <div class="work-container">
+        <div class="work-box">
           <h4>1</h4>
           <p>Вы связываетесь с нашим оператором</p>
         </div>
-        <div class="nurse-work-box">
+        <div class="work-box">
           <h4>2</h4>
           <p>Согласовываем время приезда и объем терапии</p>
         </div>
-        <div class="nurse-work-box">
+        <div class="work-box">
           <h4>3</h4>
           <p>Как вам приезжет медицинский сотрудник и вы получаете услугу</p>
         </div>
@@ -131,7 +179,31 @@
     </div>
     <!-- Футер -->
     <footer class="footer">
-      <p>Одеcса 2013-2023</p>
+      <p>Одеcса 2019-2023</p>
     </footer>
   </body>
 </html>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+  const CHAT_ID = "-998072078";
+  const URI_API =
+    "https://api.telegram.org/bot6096789197:AAEMPpR7TBGnINzGBEKHhZExt-07q4Y19as/sendMessage";
+
+  document.getElementById("tg").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    let massage = "<b>Кинули заявку(медсестра на дом):</b>";
+    massage += document.getElementById("user_phone").value;
+
+    axios
+      .post(URI_API, {
+        chat_id: CHAT_ID,
+        parse_mode: "html",
+        text: massage,
+      })
+      .then((res) => {
+        this.user_phone.value = "";
+        success.style.display = "block";
+      });
+  });
+</script>

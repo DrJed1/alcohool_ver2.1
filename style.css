@@ -6,8 +6,9 @@
     margin: 0;
     font-family:'Montserrat', 'Aerial', sans-serif;
 }
+/* Хиро страница бекграунд*/
 main{
-    height: 100vh; 
+    height: 95vh; 
     background: url(img/iv_pole.jpg);
     background-position: center;
     background-size: cover;
@@ -15,6 +16,7 @@ main{
     transition: -9vh;
     background-attachment: fixed;
 }
+/* Хедер */
 header{
     height: 9vh;
     display: flex;
@@ -25,6 +27,7 @@ header{
     }
     .gg-menu-grid-r{
         display: none !important;
+        margin-right:1em;
     }
     header ul{
         list-style: none;
@@ -76,13 +79,16 @@ header{
         text-decoration: none;
         color:#172339;
     }
+    .nav-number{
+        margin-right:2em;
+    }
     .logo{
         font-style: none;
         text-decoration: none;
         font-weight: 100;
         font-size: 1.5rem;
         color: #375283;
-        margin-right: 1em;
+        margin-left: 1em;
         text-shadow: 0px 0px 1px #000;
     }
 
@@ -123,13 +129,14 @@ header{
             .sub-button .sub-menu{
                 display:block;}
         }
-        
+
+/* Текст с мейна */
 .main-text{
     padding: 3em;
 }
     .main-text h1{
         margin-left:50%;
-        margin-top: 1em;
+        margin-top: 0.5em;
         margin-bottom: 0.5em;
         font-size: 3.5rem;
         color: #375283;
@@ -154,7 +161,7 @@ header{
         padding: 0.7em 1em;
         border: none;
         border-radius: 5px;
-        background-color: #5b84d0;
+        background-color: palevioletred;
         color: white;
         cursor: pointer;
         transition: 0.15s ease-out;
@@ -164,6 +171,26 @@ header{
         color: #5b84d0;
         background-color: whitesmoke;
     }
+    #user_phone{
+        border: 1px solid #00000050;
+        margin-left:50%;
+        padding: 1em;
+        border-radius: 3px;
+
+    }
+    #success{
+        margin-left:50%;
+        display:none; 
+        border: 1px solid #000; 
+        background-color: whitesmoke; 
+        border-radius: 3px;
+        padding: 1em;
+    }
+    .main-text h5{
+        font-weight: 500;
+        font-size: 0.9rem;
+        margin-left:50%;
+    }
     @media (max-width: 950px){
         .main-text h1, .main-text h4, .main-text li{
         margin-left:30%;
@@ -171,29 +198,314 @@ header{
     }
     @media (max-width: 750px) {
         .main-text h1, .main-text h4, .main-text li{
-            margin-left:30%;
+            margin:2% 0;
         }
         .main-text h1{
             margin-top: -1em;
             font-size: 1.5rem;
         }
         .main-text p{
+            margin:20% 2%;
             font-size: 1rem;
         }
         .main-text li{
             font-size: .8rem;
         }
+        #user_phone{
+            margin: 2% 0;
+        }
         .contact{
             scale: 70%;
-            margin-left:25%;
+            margin:2% -17%;
+        }
+        .main-text h5{
+            margin-left:0%;
+            margin-top:-0.7em;
+            padding:0;
         }
         }
+/* На мейне - Наши приемущества */
+.sector-why-us{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+    .sector-why-us h2{
+        font-weight: 500;
+        text-align: center;
+        padding: 1em 0em;
+    }
+    .why-us-container{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 1em 0;
+    }
+    .why-us-box{
+        height: 10em;
+        width: 15em;
+        border:1px solid #00000050;
+        border-radius: 7px;
+        background-color: #00000004;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .why-us-box img{
+        width: 3em;
+        padding: 0.3em;
+    }
+    .why-us-box p{
+        padding: 0.3em;
+        text-align: center;
+    }
+    @media (max-width: 750px){
+    .sector-why-us{
+        height: 90vh;
+    }
+    .why-us-container{
+        flex-direction: column;
+        row-gap: 0.3em;
+        align-items: center;
+    }
+    }
+.sector-nurse-main{
+    height: 60vh;
+    display: flex;
+    column-gap: 3em;
+    align-items: center;
+}
+    .nurse-pic-cont{
+        width: 40%;
+    }
+    .nurse-pic-cont img{
+        width: 100%;
+        border-radius: 0px 20px 20px 0px;
+    }
+    .nurse-text-main h2{}
+    .nurse-text-main p, .nurse-text-main ul li{
+        max-width: 70%;
+        line-height: 2em;
+        letter-spacing: 0.1em;
+    }
+    .gg-check{
+        display: inline-block;
+        vertical-align:middle;
+    }
+    @media (max-width: 750px){
+        .sector-nurse-main{
+            height: 70vh;
+            flex-direction: column;
+        }
+        .nurse-pic-cont{
+            width: 95%;
+        }
+        .nurse-text-main h2{
+            text-align: center;
+        }
+        .nurse-text-main p{
+            padding: 1em;
+            line-height: 1em;
+            letter-spacing: 0.1em;
+            font-size: 0.9rem;
+            max-width: 100%;
+        }
+        .nurse-text-main ul li{
+            max-width: 100%;
+            padding:0 1em;
+            font-size:0.9rem;
+        }
+    }
+/* На мейне - краткое описание компании */
+.sector-about-short{
+    height: 55vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #00000004;
+    }
+    .about-short-img-cont{
+        width: 30%
+    }
+    .about-short-img-cont img{
+        width: 100%;
+        border-radius: 20px 0px 0px 20px;
+    }
+    .about-short-text{
+        width: 70%;
+        max-width: 50%;
+    }
+    .about-short-text p{
+        line-height: 2em;
+        letter-spacing: 0.1em;
+    }
+    .about-short-text p span h2{
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    @media (max-width: 750px){
+        .sector-about-short{
+            flex-direction:column-reverse;
+            height: 100vh;
+            justify-content: center;
+        }
+        .about-short-img-cont{
+            width: 95%;
+            align-self: end;
+        }
+        .about-short-text{
+            width: 90%;
+            padding: 0 1em;
+            font-size: 0.9rem;
+            max-width: 100%;
+        }
+    }
+/* На мейне - Отзывы */
+.sector-reviews{
+    height: 40vh;
+    background-color: #00000004;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+    .sector-reviews h2{
+        font-weight: 700;
+        text-align: center;
+        padding:1em;
+    }
+    .reviews-container{
+        display: flex;
+        justify-content: space-around;
+    }
+    .review{
+        height: 10em;
+        width: 20em;
+        border:1px solid #00000050;
+        background-color: #fff;
+        border-radius: 5px;
+        position: relative;
+    }
+    .review p{
+        padding: 0.5em;
+        font-size: 0.8rem;
+    }
+    .review-name{
+        position: absolute;
+        top:9.25em;
+        font-size: 0.9rem;
+
+    }
+    .review img{
+        width: 5em;
+        position: absolute;
+        right: 1em;
+        top:6.5em;
+    }
+    .review-permission{
+        text-align: center;
+        color:#00000099;
+        font-size: 0.7rem;
+    }
+    @media (max-width: 750px){
+        .sector-reviews{
+            height: 115vh;
+        }
+        .reviews-container{
+            flex-direction: column;
+            align-items: center;
+            justify-self: center;
+            row-gap: 0.5em;
+        }
+    }
+/* Как мы работаем */
+.sector-work{
+height: 40vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+    .sector-work p{
+        text-align: center;
+        padding: 1em 0;
+    }
+    .work-container{
+        display: flex;
+        justify-content: space-around;
+    }
+    .work-box{
+        border: 1px solid #00000025;
+        border-radius: 5px;
+        height: 9em;
+        width: 18em;
+        box-sizing: border-box;
+    }
+    .work-box h4{
+        text-align: center;
+        font-size: 3rem;
+        padding:0.1em;
+        color:#375283;
+    }
+    .work-box p{
+        text-align: center;
+        padding:0.3em;
+        font-size: 0.9rem;
+    }
+    @media (max-width: 750px){
+        .sector-work{
+            height: 80vh;
+        }
+        .work-container{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 0.5em;
+        }
+    }
+/* Страница - Контакты */
+.sector-massage{
+    height: 40vh;
+    background-color: #5b84d040;
+}
+    .sector-massage h3{
+        display:block;
+        padding: 2em;
+        text-align: center;
+    }
+    .massage-container{
+        display: flex;
+        justify-content: space-around;
+    }
+        .contact-us{
+            font-size: 1.1rem;
+        }
+    .teleg-button{
+        color: white;
+        background-color: palevioletred;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 1px 1px 1px #000;
+        padding: 0.6em;
+        cursor: pointer;
+    }
+.footer{
+    display: flex;
+    height: 5vh;
+    background-color:whitesmoke;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.error{
+    height: 100vh;
+}
 .sector-about{
     height: 100vh;
     display: flex;
     justify-content: flex-end;
     background-color: whitesmoke;
-}
+  }
     .text-about{
         display: flex;
         justify-self: center;
@@ -242,395 +554,3 @@ header{
             
         }
     }
-.sector-nurse{
-    height: 60vh;
-}
-.home-nurse{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-    .nurse-price-head{
-        padding: 0.2em;
-        height: 10%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-    .nurse-price-head h2, .nurse-price-head h1, .nurse-price-head p{
-        text-decoration: none;
-        font-style: none;
-        font-size: 1.5rem;
-        font-weight: 300;
-        color: #000;
-        padding: 1em 0em;
-    }
-    .nurse-info-container{
-        height: 80%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    .nurse-pic-container{
-        height: 90%;
-        
-    }
-    .nurse-pic{
-        border-radius: 0px 20px 20px 0px;
-        height: 100%;
-        width: 100%;
-        object-fit:cover;
-        box-shadow:0.3em 0.3em 1em#5b84d0;
-        transition: 0.15s;
-        }
-        .nurse-pic:hover{
-            scale:101%;
-        }
-    .nurse-text{
-        display: block;
-        padding: 2em;
-        width: 64%;
-        letter-spacing: 0.1em;
-        line-height: 2em;
-        max-width: 50em;
-    }
-/* Регуляція всіх сторінок-додатків
-Продовження для сторінки медсестри на дому*/
-    .nurse-discription{
-        height: 45vh;
-    }
-    .nurse-discription h2, .alc-list h2{
-        padding: 0,2em;
-        text-align: center;
-        font-size: 1.5rem;
-        font-weight: 300;
-    }
-    .nurse-discription ul{
-        list-style:none;
-        padding: 1em;
-        letter-spacing: 0.1em;
-        line-height: 2em;
-        text-align: center;
-    }
-    .nurse-work-container{
-        height: 30vh;
-        display: flex;
-        justify-content: space-around;
-    }
-    .nurse-work-box{
-        border: 1px solid #00000025;
-        border-radius: 5px;
-        height: 9em;
-        width: 18em;
-        box-sizing: border-box;
-    }
-    .nurse-work-box h4{
-        text-align: center;
-        font-size: 3rem;
-        padding:0.1em;
-        color:#375283;
-    }
-    .nurse-work-box p{
-        text-align: center;
-        padding:0.3em;
-        font-size: 0.9rem;
-    }
-    .nurse-extended h2{
-        padding: 0,2em;
-        text-align: center;
-        font-size: 1.5rem;
-        font-weight: 300;
-    }
-    .nurse-extended ul{
-        list-style:none;
-        padding: 1em;
-        letter-spacing: 0.1em;
-        line-height: 2em;
-        text-align: center;
-    }
-    /* Для сторінки "Крапельниця від алкоголю" */
-    .alc-list{
-        height: 60vh;
-        display:flex;
-        flex-direction: column;
-    }
-    .alc-list h2{
-    }
-    .alc-list ul{
-        list-style: none;
-        padding: 1em;
-        letter-spacing: 0.1em;
-        line-height: 2em;
-        max-width: 55em;
-        align-self: center;
-    }
-    .alc-list p{
-        text-align: center;
-        line-height: 1.7em;
-        font-size: 1rem;
-        padding: 1em;
-    }
-    @media (max-width: 1100px){
-        .nurse-text{
-            font-size: 0.8rem;
-        }
-        .alc-list ul{
-            font-size: 0.8rem
-        }
-    }
-    @media (max-width: 750px){
-        .sector-nurse{
-            height: 120vh;
-        }
-        .nurse-price-head{
-            height: 4%;
-            font-size: 1rem;
-            padding: 2em;
-        }
-        .nurse-info-container{
-            flex-direction: column;
-        }
-        .nurse-pic-container{
-            height: 100%;
-        }
-        .nurse-pic{
-            border-radius: 0px 0px 0px 0px;
-            box-shadow:0em 0em 0.5em#5b84d0;
-        }
-        .nurse-text{
-            width: 90%;
-            font-size: .9rem;
-            line-height: 1.7em;
-            padding:0;
-            margin-top:1em;
-        }
-        .nurse-pic:hover{
-            height: 101%;
-        }
-        .nurse-discription{
-            height: 55vh;
-        }
-        .nurse-work-box p{
-            font-size: 0.8rem;
-        }
-        .nurse-work-container{
-            height: 70vh;
-            flex-direction: column;
-            align-items: center;
-            row-gap: 1em;
-        }
-        .alc-list{
-            height: 100vh;
-        }
-        .alc-list ul{
-            line-height: 1.7em;
-            font-size: 0.9rem;
-        }
-    }
-.sector-price{
-    height: 100vh;
-    background-image: url(img/hosp_light.png);
-}
-    .price-head{
-        height: 8%;
-        text-align:center;
-        /* text-shadow: 0px 0px 2px black; */}
-
-        .price-head h2{
-            text-decoration: none;
-            color: #000;
-            font-weight: 300;
-            font-size: 1.5rem;
-            padding: 0.2em;
-        }
-    .pack-container{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        height: 90%;
-        column-gap: 10vh;
-    }
-    .pack{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 50vh;
-        background: whitesmoke;
-        opacity: 0.95;
-        border-radius: 15px;
-        transition: 0.15s;
-        overflow: hidden;
-    }
-    .pack:hover{
-        opacity:1;
-        scale:101%;
-        box-shadow: 0px 0px 10px 5px #375283;
-    }
-    .pack-type{
-        color: white;
-        text-align: center;
-        background-color:#172339;
-        font-size: 2rem;
-        font-weight: 600;
-    }
-    .pack-list{
-        padding: 0.8em;
-        list-style: inside none;
-    }
-    .pack-list li{
-        margin-top: 0.7em;
-    }
-    .gg-check{
-        display: inline-block;
-        vertical-align:middle;
-    }
-    .pack-button{
-        margin-top: auto;
-        align-self: center;
-        padding: 1.5em;
-    }
-    .pack-button button{
-        border: 1px solid whitesmoke;
-        background-color: #375283;
-        color: whitesmoke;
-        padding: 1.5em;
-        border-radius: 5px;
-        transition: 0.15s;
-        cursor: pointer;
-    }
-    .pack-button button:hover{
-        border: 1px solid #375283;
-        background-color: whitesmoke;
-        color: #375283;
-    }
-    @media (max-width: 750px) and (orientation:portrait){
-        .sector-price{
-            height: 230vh;
-            background-image: none;
-            background-color: #5b84d050;
-        }
-        .price-head{
-            height: 5%;
-            font-size: 1.3em;
-        }
-        .pack-container{
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            row-gap: 1%;
-        }
-        .pack{
-            width: 80%;
-            height: 100%;
-        }
-        .pack-type{
-            font-size:1rem;
-        }
-        .pack-list li{
-            font-size: .9rem;
-        }
-    }
-.sector-process{
-    height: 100vh;
-    background-color: #5b84d010;
-    display: grid;
-    grid-template-rows: 3;
-    grid-template-columns: 2;
-    gap: 1em;
-}
-    .stage-1{
-        display: flex;
-        align-items: center;
-        grid-row: 1;
-        grid-column: 1;
-        box-shadow: 0px 0px 4px 4px #5b84d020;
-        transition: 0.2s;
-        margin: 1vh 1vh;
-    }
-    .stage-2{
-        display: flex;
-        align-items: center;
-        grid-row:2;
-        grid-column: 2;
-        box-shadow: 0px 0px 4px 4px #5b84d020;
-        transition: 0.2s;
-        margin-right:2%
-    }
-    .stage-3{
-        display: flex;
-        align-items: center;
-        grid-row: 3;
-        grid-column: 1;
-        box-shadow: 0px 0px 4px 4px #5b84d020;
-        transition: 0.2s;
-        margin: 1vh 1vh;
-    }
-    .stage-1:hover, .stage-2:hover, .stage-3:hover{
-        scale: 102%;
-    }
-    .sector-process p{
-        padding-left:0.4em;
-        letter-spacing: 0.1em;
-    }
-    .stage-num-1, .stage-num-3{
-        text-align:left;
-        font-size: 4rem;
-        color:#375283;
-    }
-    .stage-num-2{
-        text-align:right;
-        font-size: 4rem;
-        color:#375283;
-    }
-    @media (max-width:750px) {
-        .sector-process{
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            row-gap: 1em;
-        }
-        .stage-1 p, .stage-2 p, .stage-3 p{
-            font-size: .9rem;
-        }
-        .stage-num-1, .stage-num-2, .stage-num-3{
-            display:none;
-        }
-    }
-.sector-massage{
-    height: 40vh;
-    background-color: #5b84d040;
-}
-    .sector-massage h3{
-        display:block;
-        padding: 2em;
-        text-align: center;
-    }
-    .massage-container{
-        display: flex;
-        justify-content: space-around;
-    }
-        .contact-us{
-            font-size: 1.1rem;
-        }
-    .teleg-button{
-        color: white;
-        background-color: #5b84d0;
-        border: none;
-        border-radius: 5px;
-        box-shadow: 1px 1px 1px #000;
-        padding: 0.6em;
-        cursor: pointer;
-    }
-.footer{
-    display: flex;
-    height: 5vh;
-    background-color:whitesmoke;
-    align-items: center;
-    justify-content: flex-end;
-    flex-direction: column;
-}
-.error{
-    height: 100vh;
-}

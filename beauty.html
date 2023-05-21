@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Капельница Золушка Одесса</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="subpages.css" />
     <link href="https://css.gg/check.css" rel="stylesheet" />
     <link
       href="https://unpkg.com/css.gg@2.0.0/icons/css/menu-grid-r.css"
@@ -30,14 +30,33 @@
       href="/img/icons/favicon-16x16.png"
     />
     <link rel="manifest" href="/site.webmanifest" />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-FENCYHVNYM"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-FENCYHVNYM");
+    </script>
   </head>
   <body>
     <!-- Хедер -->
     <header>
+      <a class="logo" href="/"><img src="/img/mobimedx.png" /></a>
       <input type="checkbox" id="check" name="check" />
+      <div class="lang-switch">
+        <a href="/beauty" style="text-decoration: underline">RU</a>|<a
+          href="/ua/beauty"
+          >UA</a
+        >
+      </div>
       <label for="check"><i class="gg-menu-grid-r"></i></label>
       <ul class="nav">
-        <li><a href="/about">О НАС</a></li>
+        <li><a href="/">ГЛАВНАЯ</a></li>
         <li class="sub-button">
           <a class="sub-button1">УСЛУГИ</a>
           <ul class="sub-menu">
@@ -49,77 +68,106 @@
             <li><a href="/beauty">Капепельница Золушка</a></li>
           </ul>
         </li>
-        <li><a href="/process">КАК МЫ РАБОТАЕМ</a></li>
+        <li><a href="/about">О НАС</a></li>
         <li><a href="#massage">КОНТАКТЫ</a></li>
         <li class="nav-number">
           <a href="tel:+380507358689">+38 (050) 735 86 89</a>
         </li>
       </ul>
-      <div class="lang-switch">
-        <a href="/beauty" style="text-decoration: underline">RU</a>|<a
-          href="/ua/beauty"
-          >UA</a
-        >
-      </div>
-      <a class="logo" href="/"><img src="/img/mobimedx.png"></a>
     </header>
-    <!-- Капельница Золушка -->
-    <div class="home-nurse">
-      <div class="sector-nurse">
-        <div class="nurse-price-head">
-          <h1>Капельница Золушка в Одессе</h1>
+    <!-- Хиро -->
+    <div class="hero">
+      <div class="htext-side">
+        <h1>Капельница Золушка в Одессе</h1>
+        <p>
+          Капельница Золушка или Синдерелла - коктейль из 3 наилучших
+          антиоксидантов - глутатиона, альфа-липоевой кислоты, и витамина С.
+        </p>
+        <form id="tg">
+          <div class="form-control">
+            <input
+              type="tel"
+              class="form-control"
+              name="user_phone"
+              id="user_phone"
+              placeholder="XXXXXXXX"
+              value="+380"
+              minlength="13"
+              maxlength="13"
+            /><button class="contact" type="submit">
+              Бесплатная консультация
+            </button>
+          </div>
+          <div id="success">Сообщение отправлено</div>
+        </form>
+        <h5>Работаем с 2019 года</h5>
+      </div>
+      <div class="hpic-side">
+        <img src="/img/iv_beauty.jpg" />
+      </div>
+    </div>
+    <!-- Почему выбрать нас -->
+    <div class="sector-why-us">
+      <h2>Наши приемущества:</h2>
+      <div class="why-us-container">
+        <div class="why-us-box">
+          <img src="/img/icons/anonymity.png" />
+          <p>Анонимность ваших данных</p>
         </div>
-        <div class="nurse-info-container">
-          <div class="nurse-pic-container">
-            <img src="/img/iv_beauty.jpg" class="nurse-pic" />
-          </div>
-          <div class="nurse-text">
-            <p>
-              Капельница Золушка или капельница Синдерелла - коктейль из 4
-              наилучших антиоксидантов - глутатиона, альфа-липоевой кислоты,
-              адеметионина и витамина С. Капельница Золушки имеет широкий спектр
-              показаний и применяется при хронической усталости, для осветления
-              кожи, при борьбе со старением, для повышения иммунитета, для
-              выведения токсинов из организма.
-            </p>
-          </div>
+        <div class="why-us-box">
+          <img src="/img/icons/chronometer.png" />
+          <p>Выезд в день звонка, либо удобное для вас время</p>
+        </div>
+        <div class="why-us-box">
+          <img src="/img/icons/first-aid-kit.png" />
+          <p>Едем с аптечкой неотложной помощи</p>
         </div>
       </div>
-      <div class="alc-list">
+    </div>
+    <!-- Основной текст -->
+    <div class="main-list">
+      <div class="list-container">
         <h2>Состав капельницы Золушка</h2>
         <ul>
           <li>
-            <i class="gg-check"></i><b>Глутатион 4 ампулы по 600 мл</b> - основной
-            антиоксидантом в организме, который состоит из трех аминокислот -
-            цистеина, глицина и глутамата. Глутатион эффективно очищает токсины
-            и помогает бороться со стрессом.
+            <i class="gg-check"></i><b>Глутатион 1 ампула 600 мг</b> -
+            основной антиоксидантом в организме, который состоит из трех
+            аминокислот - цистеина, глицина и глутамата. Глутатион эффективно
+            очищает токсины и помогает бороться со стрессом.
           </li>
           <li>
-            <i class="gg-check"></i><b>Витамин С 3 ампулы по 3000 мг</b> - играет
-            существенную роль в управлении процессами окисления и восстановления
-            в организме, а также участвует в синтезе коллагена. Аскорбиновая
-            кислота также регулирует свертываемость крови и способствует
-            нормализации проницаемости капилляров.
+            <i class="gg-check"></i><b>Витамин С 3 ампулы по 3000 мг</b> -
+            играет существенную роль в управлении процессами окисления и
+            восстановления в организме, а также участвует в синтезе коллагена.
+            Аскорбиновая кислота также регулирует свертываемость крови и
+            способствует нормализации проницаемости капилляров.
           </li>
           <li>
-            <i class="gg-check"></i><b>Тиоктовая кислота (альфа-липоевая кислота)</b>,
-            является мощным антиоксидантом, который регулирует уровень свободных
-            радикалов в организме. Она улучшает кровообращение, снижает жировые
-            отложения в тканях и предотвращает преждевременное старение кожи.
+            <i class="gg-check"></i
+            ><b>Тиоктовая кислота (альфа-липоевая кислота)</b>, является мощным
+            антиоксидантом, который регулирует уровень свободных радикалов в
+            организме. Она улучшает кровообращение, снижает жировые отложения в
+            тканях и предотвращает преждевременное старение кожи.
           </li>
         </ul>
+        <p>
+          Рекомендованная схема 10 курсов капельниц с перерывом в 7-10 дней.
+        </p>
       </div>
-      <div class="nurse-price-head"><p>Как мы работаем:</p></div>
-      <div class="nurse-work-container">
-        <div class="nurse-work-box">
+    </div>
+    <!-- Как мы работаем -->
+    <div class="sector-work">
+      <p>Как мы работаем:</p>
+      <div class="work-container">
+        <div class="work-box">
           <h4>1</h4>
           <p>Вы связываетесь с нашим оператором</p>
         </div>
-        <div class="nurse-work-box">
+        <div class="work-box">
           <h4>2</h4>
           <p>Согласовываем время приезда и объем терапии</p>
         </div>
-        <div class="nurse-work-box">
+        <div class="work-box">
           <h4>3</h4>
           <p>Как вам приезжет медицинский сотрудник и вы получаете услугу</p>
         </div>
@@ -128,19 +176,49 @@
     <!-- Оставить сообщение -->
     <div class="sector-massage" id="massage">
       <h3>Контакты:</h3>
-        <div class="massage-container">
-          <div class="contact-us">
-            <p>Часы работы: круглосуточно 24/7</p>
-            <p>Бесплатная консультация</p>
-            <p>Номер телефона: <a href="tel:+380507358689">+38 (050) 735 86 89</a></p>
-            <p>Телеграм: <a href="https://telegram.me/mikel540"><button class="teleg-button">Перейти</button></a></p>
-            
-          </div>
+      <div class="massage-container">
+        <div class="contact-us">
+          <p>Часы работы: круглосуточно 24/7</p>
+          <p>Бесплатная консультация</p>
+          <p>
+            Номер телефона: <a href="tel:+380507358689">+38 (050) 735 86 89</a>
+          </p>
+          <p>
+            Телеграм:
+            <a href="https://telegram.me/mikel540"
+              ><button class="teleg-button">Перейти</button></a
+            >
+          </p>
+        </div>
       </div>
     </div>
     <!-- Футер -->
     <footer class="footer">
-      <p>Одеса 2013-2023</p>
+      <p>Одеса 2019-2023</p>
     </footer>
   </body>
 </html>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+  const CHAT_ID = "-998072078";
+  const URI_API =
+    "https://api.telegram.org/bot6096789197:AAEMPpR7TBGnINzGBEKHhZExt-07q4Y19as/sendMessage";
+
+  document.getElementById("tg").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    let massage = "<b>Кинули заявку(золушка):</b>";
+    massage += document.getElementById("user_phone").value;
+
+    axios
+      .post(URI_API, {
+        chat_id: CHAT_ID,
+        parse_mode: "html",
+        text: massage,
+      })
+      .then((res) => {
+        this.user_phone.value = "";
+        success.style.display = "block";
+      });
+  });
+</script>

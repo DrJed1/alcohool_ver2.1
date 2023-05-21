@@ -6,167 +6,286 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Мобільна внутрішньовенна допомога</title>
     <link rel="stylesheet" href="style.css" />
-    <link href='https://css.gg/check.css' rel='stylesheet'>
-    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/menu-grid-r.css' rel='stylesheet'>
+    <link href="https://css.gg/check.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/menu-grid-r.css"
+      rel="stylesheet"
+    />
     <!-- icons next -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/img/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/img/icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FENCYHVNYM"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-FENCYHVNYM"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-FENCYHVNYM');
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-FENCYHVNYM");
     </script>
   </head>
   <body>
-    <!-- Титульна сторінка + Хедер-->
+    <!-- Русская версия сайта -->
+    <!-- Титульная страница + Хедер-->
     <main>
       <!-- Хедер -->
       <header>
-        <input type="checkbox" id="check" name="check">
+        <a class="logo" href="/ua"><img src="/img/mobimedx.png" /></a>
+        <input type="checkbox" id="check" name="check" />
+        <div class="lang-switch">
+          <a href="/">RU</a>|<a style="text-decoration: underline" href="/ua"
+            >UA</a
+          >
+        </div>
         <label for="check"><i class="gg-menu-grid-r"></i></label>
         <ul class="nav">
-          <li><a href="/ua/about">ПРО НАС</a></li>
-          <li class="sub-button"><a class="sub-button1">ПОСЛУГИ</a>
+          <li><a href="/ua">ГОЛОВНА</a></li>
+          <li class="sub-button">
+            <a class="sub-button1">ПОСЛУГИ</a>
             <ul class="sub-menu">
-            <li><a href="/ua/nurse">Медсестра на дім</a></li>
-            <li><a href="/ua/iv-home">Крапельниця на дому</a></li>
-            <li><a href="/ua/alc">Крапепельниця від алкоголю</a></li>
-            <li><a href="/ua/poisoning">Крапепельница при отруєнні</a></li>
-            <li><a href="/ua/immunity">Крапепельниця для імунітету</a></li>
-            <li><a href="/ua/beauty">Крапепельниця Золушка</a></li>
+              <li><a href="/ua/nurse">Медсестра на дім</a></li>
+              <li><a href="/ua/iv-home">Крапельниця на дому</a></li>
+              <li><a href="/ua/alc">Крапельниця від алкоголю</a></li>
+              <li><a href="/ua/poisoning">Крапельниця при отруєнні</a></li>
+              <li><a href="/ua/immunity">Крапельниця для імунітету</a></li>
+              <li><a href="/ua/beauty">Крапельниця Попелюшка</a></li>
             </ul>
           </li>
-          <li><a href="/process">ЯК МИ ПРАЦЮЄМО</a></li>
+          <li><a href="/ua/about">ПРО НАС</a></li>
           <li><a href="#massage">КОНТАКТИ</a></li>
-          <li class="nav-number"><a href="tel:+380507358689">+38 (050) 735 86 89</a></li>
+          <li class="nav-number">
+            <a href="tel:+380507358689">+38 (050) 735 86 89</a>
+          </li>
         </ul>
-        <div class="lang-switch"><a href="/index">RU</a>|<a href="/ua" style="text-decoration: underline;">UA</a></div>
-        <a class="logo" href="/"><img src="/img/mobimedx.png"></a>
       </header>
-      <!-- Титульна сторінка -->
-      <div class="main-text">
-          <h1>Мобільна внутрішньовенна допомога в Одесі</h1>
-          <p>Професійні послуги медичної сестри у вас удома. Довірте постановку крапельниці та уколи нашим кваліфікованим співробітникам у комфортній обстановці.</p>
-          <a href="#massage"><button class="contact">Зв'язатись з нами</button></a>
-        </div>
+      <!-- Титульная страница -->
+      <div class="main-text" id="#main">
+        <h1>Мобільна внутрішньовенна допомога в Одесі</h1>
+        <p>
+          Професійні послуги медичної сестри у вас удома. Довірте постановку
+          крапельниці та уколи нашим кваліфікованим співробітникам у комфортній
+          обстановці.
+        </p>
+        <form id="tg">
+          <div class="form-control">
+            <input
+              type="tel"
+              class="form-control"
+              name="user_phone"
+              id="user_phone"
+              placeholder="XXXXXXXX"
+              value="+380"
+              minlength="13"
+              maxlength="13"
+            /><button class="contact" type="submit">
+              Безкоштовна консультація
+            </button>
+          </div>
+          <div id="success">Повідомлення відправлено</div>
+        </form>
+        <h5>Працюємо с 2019 года</h5>
       </div>
     </main>
-    <!-- Про компанію -->
-    <div class="sector-about" id="about">
-      <div class="text-about">Ви довіряєте нам найцінніше – своє здоров'я, тому ми гарантуємо високий рівень
-        професіоналізму персоналу. Наші співробітники мають значний досвід роботи у стаціонарі, що означає -
-        нам під силу вени будь-якої складності. Якщо крапельниця за призначенням лікаря, витратні матеріали ми беремо на себе - вам потрібно придбати тільки ліки.
-        Подбайте про свій комфорт з нашою допомогою. Виклик медичного персоналу додому в будь-яку точку міста та передмістя
-        у зручний для вас день та час.
-      </div>
-        <div class="img-container">
-        <img src="img/injection.jpg" class="inj-img">
-      </div>
-    </div>
-    <!-- Послуги медсестри на дому -->
-    <div class="sector-nurse">
-        <div class="nurse-price-head"><h2>Послуги медичної сестри на дому</h2></div>
-        <div class="nurse-info-container">
-          <div class="nurse-pic-container"><img src="img/nurse_iv.jpeg" class="nurse-pic"></div>
-          <div class="nurse-text">Якщо вам необхідно поставити крапельницю або зробити уколи вдома, ми пропонуємо
-            свої професійні послуги. Наші співробітники мають значний досвід роботи у стацонарі, що означає ін'єкції
-            навіть у найважчі вени. У разі екстрених ситуацій (алергія, непереносимість ліків), у нас є аптечка
-            невідкладної допомоги. Усі витрані матеріали (спирт, вата, лейкопластир, шприци, система) ми беремо на себе - 
-            вам потрібно придбати лише ліки. Ціна від 200 грн.
-          </div>
+    <!-- Чому обрати нас -->
+    <div class="sector-why-us">
+      <h2>Наші переваги:</h2>
+      <div class="why-us-container">
+        <div class="why-us-box">
+          <img src="/img/icons/anonymity.png" />
+          <p>Анонімність ваших данних</p>
+        </div>
+        <div class="why-us-box">
+          <img src="/img/icons/chronometer.png" />
+          <p>Виїзд в день дзвінку або у зручний для вас час</p>
+        </div>
+        <div class="why-us-box">
+          <img src="/img/icons/first-aid-kit.png" />
+          <p>Їдемо з аптечкою невідкладної допомоги</p>
         </div>
       </div>
-    <!-- Послуги внутрішньовенної терапії -->
-    <div class="sector-price" id="price">
-      <div class="price-head"><h2>Послуги внутрішньовенної терапії</h2></div>
-        <div class="pack-container">
-          <div class="pack">
-            <div class="pack-type">Регідратація<br> 1200 грн</div>
-            <div class="pack-discr">
-              <ul class="pack-list">
-                <li></i>Рекомендують під час та після харчового отруєння для відновлення рівня рідини в організмі</li>
-                <li><i class="gg-check"></i>800 мл розчину іонів Na+, Mg+, Ca+, K+</li>
-                <li><i class="gg-check"></i>2 пакета іонних порошків</li>
-                <li><i class="gg-check"></i>Препарати від нудоти</li>
-                <li><i class="gg-check"></i>Препарати від діареї</li>
-              </ul>
-            </div>
-            <div class="pack-button"><a href="#massage"><button>Детальніше</button></a></div>
-          </div>
-          <div class="pack">
-            <div class="pack-type">Імунітет+ <br>1400 грн</div>
-              <div class="pack-discr">
-                  <ul class="pack-list">
-                    <li></i>Рекомендується під час застуди та після неї для швидкого відновлення організму, 
-                      також, як профілактика вірусних захворювань.</li>
-                    <li><i class="gg-check"></i>Розчин іонів Na+, Mg+, Ca+, K+</li>
-                    <li><i class="gg-check"></i>Вітаміни B1, B6, B12</li>
-                    <li><i class="gg-check"></i>Вітамін C</li>
-                    <li><i class="gg-check"></i>Вітамін D3</li>
-                    <li><i class="gg-check"></i>Цинк глюконат</li>
-                  </ul>
-              </div>
-            <div class="pack-button"><a href="#massage"><button>Детальніше</button></a></div>
-          </div>
-          <div class="pack">
-            <div class="pack-type">Похмілля-<br>1600 грн</div>
-            <div class="pack-discr">
-              <ul class="pack-list">
-                <li>Рекомендується після випивання алкоголю для швидкого зняття симптомів сп'яніння та похмілля.</li>
-                <li><i class="gg-check"></i>Розчин з лактатом натрія для нейтралізації кислоти</li>
-                <li><i class="gg-check"></i>Іони Mg+, K+</li>
-                <li><i class="gg-check"></i>Вітаміни B1, B6, B12</li>
-                <li><i class="gg-check"></i>Вітамін C</li>
-              </ul>
-            </div>
-              <div class="pack-button"><a href="alc.html"><button>Детальніше</button></a></div>
-          </div>
+    </div>
+    <!-- Услуги медсестры на дом -->
+    <div class="sector-nurse-main">
+      <div class="nurse-pic-cont">
+        <img src="/img/nurse_iv.jpeg" class="nurse-pic" />
+      </div>
+      <div class="nurse-text-main">
+        <h2>Послуги медичної допомоги на дому</h2>
+        <br />
+        <p>
+          Якщо вам потрібно поставити крапельницю вдома, зробіть це з нашою
+          допомогою:
+        </p>
+        <ul style="list-style: none">
+          <li>
+            <i class="gg-check"></i
+            ><a href="/ua/nurse">По призначенню вашого лікаря</a>
+          </li>
+          <li><i class="gg-check"></i><a href="/alc">Від похмілля</a></li>
+          <li>
+            <i class="gg-check"></i
+            ><a href="/ua/poisoning">Від харчового отруєння</a>
+          </li>
+          <li>
+            <i class="gg-check"></i
+            ><a href="/ua/immunity">Для підвищення імунітету</a>
+          </li>
+          <li>
+            <i class="gg-check"></i
+            ><a href="/ua/beauty">Крапельниця Золушка</a>
+          </li>
+        </ul>
       </div>
     </div>
-    <!-- Як це відбувається -->
-    <div class="sector-process" id="process">
-      <div class="stage-1">
-        <p>Ваш запит оформляється та передається вільному співробітнику.
-          На основі даних, які ви дали, медичний працівник бере на себе обсяг препаратів необхідних для процедури.
-          У зручний для вас час він приїде, попередньо зателефонувавши.
+    <!-- О компании -->
+    <div class="sector-about-short">
+      <div class="about-short-text">
+        <span><h2>О нас</h2></span><br />
+        <p>
+          Наша мета забезпечити пацієнтам комфорт та якісну медичну
+          допомога прямо в них удома. Ми розуміємо, що деяким людям може бути
+          складно чи незручно відвідувати клініку чи лікарню, тому ми приносимо
+          медичну допомогу безпосередньо до них. Ми прагнемо покращити якість
+          життя пацієнтів, приділяючи увагу їх індивідуальним потребам та
+          забезпечуючи ефективну взаємодію між лікарями та пацієнтами.
         </p>
       </div>
-      <div class="stage-num-1">1.</div>
-      <div class="stage-2">
-        <p>До вас приїжджає наш співробітник з усім необхідним: штатив для крапельниці, тонометр, препарати для лікування
-          (у разі наших крапельниць) та витратні матеріали. Проводиться внутрішньовенний доступ та встановлюється флакон із препаратом.
-        </p>
+      <div class="about-short-img-cont">
+        <img src="/img/nurse-at-home.jpeg" />
       </div>
-      <div class="stage-num-2">2.</div>
-      <div class="stage-3">
-        <p>Будуть надані рекомендації, що в подальшому
-          потрібно буде робити, взалежності від вашої ситуації. Медичний працівник залишає у вас препарати, які потрібно буде пропити на
-          протязі 2-3 діб для максимального відновлення організму.
-        </p>
+    </div>
+    <!-- Отзывы -->
+    <div class="sector-reviews">
+      <h2>Відгуки</h2>
+      <div class="reviews-container">
+        <div class="review">
+          <p>
+            "Хочу выразить глубокую благодарность фельдшеру Михаилу. Его
+            профессиональный подход и способность успокоить меня сделали всю
+            ситуацию более легкой. Огромное спасибо!"
+          </p>
+          <p class="review-name">Валентина</p>
+          <img src="/img/rating.png" />
+        </div>
+        <div class="review">
+          <p>
+            "Никогда не встречала такой заботливой и доброй медсестры, как
+            Елена. Она превзошла все мои ожидания, оказывая медицинскую помощь
+            моему сыну. Очень благодарна за ее профессионализм и эмпатию!"
+          </p>
+          <p class="review-name">Анонимно</p>
+          <img src="/img/rating.png" />
+        </div>
+        <div class="review">
+          <p>
+            "Я хотел бы выразить благодарность фельдшеру Дмитрию за его
+            оперативность и профессионализм. Он приехал к нам очень быстро и
+            предоставил медицинскую помощь, которую мы срочно нуждались. Очень
+            доволен его работой и рекомендую его всем!"
+          </p>
+          <p class="review-name">Анонимно</p>
+          <img src="/img/rating.png" />
+        </div>
+        <div class="review">
+          <p>
+            "Доктор Сергей - надежный и внимательный врач. Он не только
+            предоставил мне качественное лечение, но и объяснил все детали и
+            ответил на все мои вопросы. Я безмерно благодарен за его
+            профессионализм."
+          </p>
+          <p class="review-name">Александр</p>
+          <img src="/img/rating.png" />
+        </div>
       </div>
-      <div class="stage-num-3">3.</div>
+      <div class="review-permission">
+        Усі відгуки опубліковані з дозволу клієнтів.
+      </div>
+    </div>
+    <!-- Як ми працюємо -->
+    <div class="sector-work">
+      <p>Як ми працюємо</p>
+      <div class="work-container">
+        <div class="work-box">
+          <h4>1</h4>
+          <p>Ви зв'язуєтесь з нашим оператором</p>
+        </div>
+        <div class="work-box">
+          <h4>2</h4>
+          <p>Узгоджуємо час приїзду та обсяг терапії</p>
+        </div>
+        <div class="work-box">
+          <h4>3</h4>
+          <p>До вас приїжджає медичний співробітник і ви отримуєте послугу</p>
+        </div>
+      </div>
     </div>
     <!-- Залишити повідомлення -->
     <div class="sector-massage" id="massage">
       <h3>Контакти:</h3>
-        <div class="massage-container">
-          <div class="contact-us">
-            <p>Безкоштовна консультація</p>
-            <p>Години роботи: цілодобово 24/7</p>
-            <p>Номер телефону: <a href="tel:+380507358689">+38 (050) 735 86 89</a></p>
-            <p>Телеграм: <a href="https://telegram.me/mikel540"><button class="teleg-button">Посилання</button></a></p>
-            <p>Офіс: м. Одеса вул. Спирідонівська 69 (тимчасово не працює)</p>
-          </div>
+      <div class="massage-container">
+        <div class="contact-us">
+          <p>Безкоштовна консультація</p>
+          <p>Години роботи: цілодобово 24/7</p>
+          <p>
+            Номер телефону: <a href="tel:+380507358689">+38 (050) 735 86 89</a>
+          </p>
+          <p>
+            Телеграм:
+            <a href="https://telegram.me/mikel540"
+              ><button class="teleg-button">Посилання</button></a
+            >
+          </p>
+          <a href="#tg">Передзвонити вам</a>
+        </div>
       </div>
     </div>
     <!-- Футер -->
     <footer class="footer">
-      <p>Одеса 2013-2023</p>
+      <p>Одесcа 2019-2023</p>
     </footer>
   </body>
 </html>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+  const CHAT_ID = "-998072078";
+  const URI_API =
+    "https://api.telegram.org/bot6096789197:AAEMPpR7TBGnINzGBEKHhZExt-07q4Y19as/sendMessage";
+
+  document.getElementById("tg").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    let massage = "<b>Кинули заявку(мейн(укр)):</b>";
+    massage += document.getElementById("user_phone").value;
+
+    axios
+      .post(URI_API, {
+        chat_id: CHAT_ID,
+        parse_mode: "html",
+        text: massage,
+      })
+      .then((res) => {
+        this.user_phone.value = "";
+        success.style.display = "block";
+      });
+  });
+</script>
