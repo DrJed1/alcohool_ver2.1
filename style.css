@@ -262,7 +262,7 @@ header{
     }
     @media (max-width: 750px){
     .sector-why-us{
-        height: 90vh;
+        height: 100vh;
     }
     .why-us-container{
         flex-direction: column;
@@ -295,7 +295,7 @@ header{
     }
     @media (max-width: 750px){
         .sector-nurse-main{
-            height: 70vh;
+            height: 80vh;
             flex-direction: column;
         }
         .nurse-pic-cont{
@@ -348,7 +348,7 @@ header{
     @media (max-width: 750px){
         .sector-about-short{
             flex-direction:column-reverse;
-            height: 100vh;
+            height: 110vh;
             justify-content: center;
         }
         .about-short-img-cont{
@@ -410,7 +410,7 @@ header{
     }
     @media (max-width: 750px){
         .sector-reviews{
-            height: 115vh;
+            height: 120vh;
         }
         .reviews-container{
             flex-direction: column;
@@ -454,7 +454,7 @@ justify-content: center;
     }
     @media (max-width: 750px){
         .sector-work{
-            height: 80vh;
+            height: 90vh;
         }
         .work-container{
             flex-direction: column;

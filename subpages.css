@@ -175,7 +175,7 @@ header{
     }
         @media (max-width: 750px){
             .hero{
-                height: 115vh;
+                height: 120vh;
                 flex-direction: column;
                 justify-content: space-evenly;
             }
@@ -234,7 +234,7 @@ header{
     }
     @media (max-width: 750px){
     .sector-why-us{
-        height: 90vh;
+        height: 100vh;
     }
     .why-us-container{
         flex-direction: column;
@@ -314,7 +314,7 @@ header{
         }
         @media (max-width: 750px){
             .sector-work{
-                height: 80vh;
+                height: 90vh;
             }
             .work-container{
                 flex-direction: column;
