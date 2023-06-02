@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 @import url('https://unpkg.com/css.gg@2.0.0/icons/css/check.css');
 
 * {
@@ -146,7 +146,6 @@ header{
         margin-bottom: 1.5em;
         font-size: 1.1rem;
         color: #5b5b7f;
-        letter-spacing: 0.1em;
         font-weight: 500;
     }
     .main-text li{
@@ -287,7 +286,6 @@ header{
     .nurse-text-main p, .nurse-text-main ul li{
         max-width: 70%;
         line-height: 2em;
-        letter-spacing: 0.1em;
     }
     .gg-check{
         display: inline-block;
@@ -341,7 +339,6 @@ header{
     }
     .about-short-text p{
         line-height: 2em;
-        letter-spacing: 0.1em;
     }
     .about-short-text p span h2{
         text-align: center;
